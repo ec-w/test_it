@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML/CSSの学習</title>
+<link rel="stylesheet" href="">
+<style>
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+	body{
+		margin: 0;
+   		padding: 0;
+		background-color: beige;
+	}
+	#wrapper{
+		background-color: gainsboro;
+		padding: 150px;
+	}
+	h1{
+		font-size: 25px;
+		background-color: antiquewhite;
+		margin: 0 auto;
+		padding: 50px;
+		width: 400px;
+		height: 400px;
+		text-align: center;
+		box-sizing: border-box;
+		border: solid 2px #3686B9;
+ 		border-bottom: solid 5px red;/*ボーダー左右上下指定*/
+ 		border-right-style: dashed;/*ボーダー左右上下スタイル指定*/
+	}
+	p{
+		margin: 0;
+		padding: 0;
+	}
+	
+	/*relative*/
+	#relative {
+		position: relative;
+		top:50px;
+		left:100px;
+	}
+	#relative1 {
+		position: fixed;
+		top: 50px;
+		background-color: red;
+	}
+	#relative2 {
+		position: relative;
+		top:0px;
+		left: 20px;
+		background-color: yellow;
+		width: 100px;
+	}
+	#relative3 {
+		position: relative;
+		right: -30px;
+		background-color: blue;
+		width: 100px;
+	}
+	#relative4 {
+		position: relative;
+		bottom: 10px;
+		background-color: gray;
+		width: 100px;
+	}
+	
+	/*absolute*/
+	#absolute {
+		position: static;
+	}
+	#absolute1 {
+		position: absolute;
+		top: 0px;
+		background-color: red;
+	}
+	#absolute2 {
+		position: absolute;
+		top: 10px;
+		left: 50px;
+		background-color: yellow;
+	}
+	#absolute3 {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		background-color: blue;
+	}
+	#absolute4 {
+		position: absolute;
+		top: 30px;
+		left: 120px;
+		background-color: gray;
+	}
+</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<h1>テキスト</h1>
+	</div>
+     <div id="relative">
+            <p id="relative1">relative1-fixed</p>
+            <p id="relative2">relative2</p>
+            <p id="relative3">relative3</p>
+            <p id="relative4">relative4</p>
+	 </div>
+
+	 <div id="absolute">
+            <p id="absolute1">absolute1</p>
+            <p id="absolute2">absolute2</p>
+            <p id="absolute3">absolute3</p>
+            <p id="absolute4">absolute4</p>
+	 </div>
+</body>
+</html>
